@@ -1,0 +1,34 @@
+************************************
+***** Frankenstein's Bejewled ******
+************************************
+
+** Introdução **
+
+Este jogo foi desenvolvido por Francisco Viegas Vianna, Jonas Arêas Fragozo de Souza e Rafael Oliveira Lopes em 2006 para a disciplina de Computação Para a Informática I do curso de Ciência da Computação da Universidade Federal do Rio de Janeiro.
+
+Este é um projeto com fins educacionais (aprender a linguagem C e a biblioteca Allegro) e assim permanecerá.
+
+Sua última compilação foi feita em Dezembro de 2006. Não existem garantias de que o código atual esteja compilando. Para mais detalhes, ver Seção Planos Futuros.
+
+Mais detalhes sobre o programa se encontram em Manual.pdf
+
+** Requisitos **
+
+- GCC
+- Allegro 4.2.0 (e suas dependências)
+
+A compilação é feita com os parâmetros normais do GCC e Allegro. Mais detalhes em Manual.pdf
+
+** Planos Futuros **
+
+1 - Reescrever o código para Allegro 5.
+
+Com o lançamento do Allegro 5, nossa intenção é reescrever o código para ficar compatível com a mais recente versão do Allegro.
+
+2 - Reescrever o código em C++ com QT.
+
+** Contato **
+
+rafaoliveiralopes@gmail.com
+
+Como este é um projeto com fins educacionais, sinta-se a vontade para nos notificar qualquer bug ou entrar em contato conosco para sugerir idéias
