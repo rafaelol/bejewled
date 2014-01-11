@@ -1,0 +1,1 @@
+gcc -o .\bin\jewels.exe .\src\abertura.o .\src\jewels.c -g -Wall -lalleg -pedantic

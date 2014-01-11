@@ -1,0 +1,109 @@
+**********************
+***Mudanças no Jogo***
+**********************
+
+-> Não se pode mais pedir dica com menos de 10 pontos.
+-> Agora sai da tela de créditos e de ranking novo clicando também.
+
+**********************
+***Funções Criadas:***
+**********************
+
+**Carrega_Tudo**
+-> Carrega tudo =)
+
+**Fecha_Tudo**
+-> Fecha tudo =)
+
+***********************
+***Funções Alteradas***
+***********************
+
+**Avisa_Erro** 
+-> Sample passa a ser som_erro, global. Funcao passa a ser void.
+
+**Programa**
+-> Não existe mais nenhum load. 
+-> Bitmap menu morreu, puxa direto da tela_menu
+-> Criada variavel desenhado, para evitar problema com o mouse piscando.
+
+**Jogo**
+-> SAMPLE erro morreu. Puxa o sample global.
+-> BITMAP *buffer morreu(mais explicacoes na funcao desenha)
+
+**Desenha**
+-> Parametro *bmp morre. Desnecessário passar como parâmetro se é tratado sempre como variável local. Chamadas a bmp alteradas para chamadas à variavel buffer
+A PENSAR: possibilidade de morrer o buffer, trabalhando com a variavel global.
+
+**main**
+-> Chamada às funcoes Carrega_Tudo() e Fecha_Tudo().
+
+**Escolher_Joia**
+-> Variavel local joia morreu. Com as imagens carregadas no inicio, é melhor chapar logo no buffer a joia correspondente.
+
+**Prepara_Para_Apagar**
+-> Variavel local *buffer5 morreu. Sua unica funcao era ser chamada no Desenha, que nao precisa mais de buffer.
+
+**Desenha_Tempo**
+-> Usando variavel global buffer_tempo. Morreu o buffer local.
+
+**Creditos**
+-> Morreu a variavel local *cred. Tela de credito chapada na tela agora.
+
+**Jogo_Pausado**
+-> Morrem os bitmaps tela1 e tela2.
+-> Agora possui um parâmetro(joias)
+-> Com esse parâmetro, não fazemos mais o metodo antigo de copiar num buffer a imagem, pra colar no final do pause. Agora quando sai do pause é chamada a função Desenha().
+
+**Verifica_Depois_de_cair**
+-> Morre bufferaux. Só existia pra chamada de Desenha.
+
+**Apaga_Depois_de_cair**
+-> Morre buffer2. Só existia pra chamada de Desenha.
+
+**Dica**
+-> Morre buffer4. Só existia pra chamada de Desenha.
+-> Não pode mais pedir dica se não tiver ponto suficiente pra gastar.
+
+**Recordes_Na_Tela**
+-> Chamada para Abre_Fonte apagada.
+-> Carregamento de tela_recordes morreu. Agora as funcoes sao chamadas atraves de fundo_recordes e com a ajuda de um buffer.
+
+**Instrucoes**
+-> Morre o bitmap da função. É chapado na screen da variavel global.
+
+**Game_Over**
+-> Morrem bitmaps game e msgrecorde. Usando bitmap que vem da variavel global.
+
+**Nome**
+TRABALHAR NESSA FUNCAO COM EXTREMA URGENCIA!!
+
+OBS Importante: Em muitas funções que tinham criação de bitmap auxiliar pra função desenha, não tinha verificação do bitmap. Ou seja, o erro poderia acontecer ai e nos nao pegamos.
+
+**********************
+***Funções Apagadas***
+**********************
+
+-->Abre_Fonte
+
+***********************************
+***Coisas a fazer pra versão 1.5***
+***********************************
+
+-> Consertar a gambiarra do Diogo pra apresentar os Recordes(ou seja, fazer com que salve corretamente no arquivo)
+
+-> Alterar a função nome de forma que evite usar aqueles bitmaps.
+
+***********************************
+***Coisas a fazer pra versão 2.0***
+***********************************
+
+-> Teste de mudança de cores
+
+-> Musica em MP3
+
+-> Passar pra constantes
+
+-> Fases do jogo
+
+-> Fazer cafuné e coçar as costas...
